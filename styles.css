@@ -295,7 +295,7 @@ section {
 }
 .stay-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .stay-card .photo {
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/2;
   position: relative;
   overflow: hidden;
 }
