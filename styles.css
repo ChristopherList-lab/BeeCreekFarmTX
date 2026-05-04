@@ -613,6 +613,41 @@ section {
   .reveal { opacity: 1; transform: none; }
 }
 
+/* ---------- Donkeys ---------- */
+.donkeys { background: var(--bone-warm); padding: 5rem 0; }
+.donkeys-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+@media (max-width: 720px) { .donkeys-grid { grid-template-columns: 1fr; } }
+
+.donkey-card {
+  background: var(--bone);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(31,27,22,.06);
+  display: flex; flex-direction: column;
+  transition: transform .25s var(--ease), border-color .25s var(--ease);
+}
+.donkey-card:hover { border-color: var(--honey); transform: translateY(-2px); }
+.donkey-card img {
+  width: 100%; height: 280px; object-fit: cover; display: block;
+}
+.donkey-card .donkey-body { padding: 1.5rem 1.75rem 1.75rem; }
+.donkey-card h3 {
+  font-family: var(--serif, "Fraunces", serif);
+  font-size: 1.5rem; font-weight: 600; margin-bottom: .25rem;
+}
+.donkey-card .donkey-tag {
+  font-size: .75rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--honey); font-weight: 600; margin-bottom: .8rem;
+}
+.donkey-card .donkey-body p:not(.donkey-tag) {
+  color: var(--ink-soft); font-size: .98rem; line-height: 1.55;
+}
+
 /* ---------- Mason card button reset ---------- */
 button.mason-card {
   font: inherit;
