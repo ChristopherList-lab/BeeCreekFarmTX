@@ -552,6 +552,56 @@ section {
   font-size: .8rem;
 }
 
+/* ---------- FAQ ---------- */
+.faq {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--cream, #F4EFE3);
+}
+.faq .section-head { margin-bottom: 2.5rem; }
+.faq-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.faq-list details {
+  border-top: 1px solid rgba(31, 27, 22, 0.12);
+  padding: 1.25rem 0;
+}
+.faq-list details:last-child {
+  border-bottom: 1px solid rgba(31, 27, 22, 0.12);
+}
+.faq-list summary {
+  cursor: pointer;
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #1F1B16;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after {
+  content: "+";
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--honey, #E5A93A);
+  transition: transform .25s ease;
+  flex-shrink: 0;
+}
+.faq-list details[open] summary::after {
+  content: "−";
+  transform: rotate(0deg);
+}
+.faq-list details p {
+  margin: .9rem 0 0;
+  color: rgba(31, 27, 22, 0.78);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
 /* ---------- Reveal-on-scroll ---------- */
 .reveal {
   opacity: 0;
