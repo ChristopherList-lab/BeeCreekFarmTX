@@ -339,7 +339,6 @@
       <figure class="tall reveal"><img src="assets/img/road-mesquite.jpg" alt="Dirt road winding under mesquite trees" loading="lazy" /></figure>
       <figure class="wide reveal"><img src="assets/img/hero-donkeys.jpg" alt="Two donkeys grazing in a wildflower field" loading="lazy" /></figure>
       <figure class="reveal"><img src="assets/img/signs.jpg" alt="Property signs pointing to Farm House and Big Bend" loading="lazy" /></figure>
-      <figure class="reveal"><img src="assets/img/road-fence.jpg" alt="Path past a wooden fence into the trees" loading="lazy" /></figure>
       <figure class="wide reveal"><img src="assets/img/road-curve.jpg" alt="Bend in the dirt road through the spring wildflowers" loading="lazy" /></figure>
       <figure class="reveal"><img src="assets/img/silo-mark.jpg" alt="Bee Creek Farm hand-painted bee-and-flower mark on the silo" loading="lazy" /></figure>
     </div>
@@ -361,48 +360,103 @@
     </div>
 
     <div class="mason-grid">
-      <a class="mason-card reveal" href="https://tpwd.texas.gov/state-parks/enchanted-rock" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="enchanted-rock">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20l5-9 4 6 3-4 6 7H3z"/><circle cx="17" cy="6" r="2"/></svg>
         <p class="distance">~45 minutes south</p>
         <h3>Enchanted Rock</h3>
         <p>The 425-foot pink granite dome, largest monadnock in the country. Climb it at sunrise. Day-use entry fills up — reserve ahead at TPWD on weekends.</p>
-      </a>
+      </button>
 
-      <a class="mason-card reveal" href="https://masontx.org" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="town-square">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M3 9l9-6 9 6M9 20v-5h6v5"/></svg>
         <p class="distance">10 minutes from the farm</p>
         <h3>Mason Town Square</h3>
         <p>Old Yeller's Market every Saturday 9–4 with crafts, antiques, and local food. The Odeon Theater, the courthouse, and the Old Yeller statue — author Fred Gipson was a Mason native.</p>
-      </a>
+      </button>
 
-      <a class="mason-card reveal" href="https://www.sandstonecellarswinery.com" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="sandstone">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3v6c0 2 2 3 4 3s4-1 4-3V3"/><path d="M12 12v9M8 21h8"/></svg>
         <p class="distance">In town · est. 2004</p>
         <h3>Sandstone Cellars Winery</h3>
         <p>Mason's first winery and still the heart of the wine bar scene. Tasting room, art gallery, and a backyard worth lingering in. Walking distance from the square.</p>
-      </a>
+      </button>
 
-      <a class="mason-card reveal" href="https://tpwd.texas.gov/huntwild/wild/species/bats/bat-watching-sites/eckert-james-river.phtml" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="bat-cave">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8c3 0 4 4 6 4 3 0 3-4 4-4s1 4 4 4 3-4 6-4"/><path d="M12 12v6"/></svg>
         <p class="distance">~25 min · Thu–Sun, mid-May–Oct</p>
         <h3>Eckert James River Bat Cave</h3>
         <p>Four million Mexican free-tailed bats stream out at dusk all summer long. One of the largest bat nurseries in North America. Bring water and a folding chair.</p>
-      </a>
+      </button>
 
-      <a class="mason-card reveal" href="https://masontx.org" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="topaz">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l4 6h-8z"/><path d="M4 8h16l-8 14z"/></svg>
         <p class="distance">By appointment</p>
         <h3>Topaz Hunting</h3>
         <p>Mason County is the only place in Texas where blue topaz — the state gem — is found in the wild. Hunt streambeds and granite outcrops at one of the local ranches.</p>
-      </a>
+      </button>
 
-      <a class="mason-card reveal" href="https://www.tourtexas.com/destinations/mason-county-things-to-do" target="_blank" rel="noopener">
+      <button class="mason-card reveal" type="button" data-modal-target="llano-river">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2"/><path d="M3 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2"/></svg>
         <p class="distance">15 minutes east</p>
         <h3>Llano River</h3>
         <p>Cold, clear, slow-moving Hill Country river. Tube, paddle, or just wade in. Public access at the highway crossings — pack a sandwich and stay all afternoon.</p>
-      </a>
+      </button>
     </div>
+
+    <!-- Modal templates -->
+    <template id="modal-enchanted-rock">
+      <p class="modal-eyebrow">~45 minutes south of the farm</p>
+      <h3>Enchanted Rock</h3>
+      <img src="assets/img/mason-enchanted-rock.jpg" alt="Aerial view of Enchanted Rock pink granite dome" loading="lazy" />
+      <p>A 425-foot pink granite dome rising out of the Hill Country — the largest monadnock in the United States. Sacred to the Tonkawa, Apache, and Comanche before it became a state park. The summit hike is about 45 min round trip; come at sunrise for the cool air and the colors.</p>
+      <p>Day-use entry caps daily and fills up by mid-morning on weekends. Reserve a slot ahead through Texas Parks &amp; Wildlife. Bring water — there's no shade on the dome.</p>
+      <a class="btn btn-primary modal-cta" href="https://tpwd.texas.gov/state-parks/enchanted-rock" target="_blank" rel="noopener">Visit official site →</a>
+    </template>
+
+    <template id="modal-town-square">
+      <p class="modal-eyebrow">10 minutes from the farm</p>
+      <h3>Mason Town Square</h3>
+      <img src="assets/img/mason-courthouse.jpg" alt="Mason County Courthouse on the historic town square" loading="lazy" />
+      <p>The 1909 Mason County Courthouse anchors a postcard town square ringed with antique stores, a hardware store that's been in the same family for four generations, and a soda fountain. Old Yeller's Market runs every Saturday 9–4 with crafts, antiques, and Hill Country food.</p>
+      <p>Don't miss the Odeon Theater (still showing movies), the bronze Old Yeller statue (author Fred Gipson grew up here), and the Mason Square Museum just off the courthouse lawn.</p>
+      <a class="btn btn-primary modal-cta" href="https://masontx.org" target="_blank" rel="noopener">Visit official site →</a>
+    </template>
+
+    <template id="modal-sandstone">
+      <p class="modal-eyebrow">In town · established 2004</p>
+      <h3>Sandstone Cellars Winery</h3>
+      <img src="assets/img/mason-sandstone.jpg" alt="Wine glass at Sandstone Cellars Winery in Mason, Texas" loading="lazy" />
+      <p>Mason's first winery — and still the soul of the local wine bar scene. The tasting room shares a building with a working art gallery, and the back garden is the kind of place you mean to stay an hour and end up staying three.</p>
+      <p>Walk-ins welcome on weekends. Walking distance from the courthouse square.</p>
+      <a class="btn btn-primary modal-cta" href="https://www.sandstonecellarswinery.com" target="_blank" rel="noopener">Visit official site →</a>
+    </template>
+
+    <template id="modal-bat-cave">
+      <p class="modal-eyebrow">~25 min · Thu–Sun, mid-May through October</p>
+      <h3>Eckert James River Bat Cave</h3>
+      <img src="assets/img/mason-bats.jpg" alt="Mexican free-tailed bats emerging at dusk" loading="lazy" />
+      <p>Around four million Mexican free-tailed bats live in the cave from May through October. At dusk they stream out in a ribbon that takes 30+ minutes to clear the cave — one of the largest bat nurseries in North America, and a Nature Conservancy preserve.</p>
+      <p>Open Thursday through Sunday during the season. Cash entry. Bring water, bug spray, a folding chair, and arrive an hour before sunset.</p>
+      <a class="btn btn-primary modal-cta" href="https://tpwd.texas.gov/huntwild/wild/species/bats/bat-watching-sites/eckert-james-river.phtml" target="_blank" rel="noopener">Visit official site →</a>
+    </template>
+
+    <template id="modal-topaz">
+      <p class="modal-eyebrow">By appointment</p>
+      <h3>Topaz Hunting</h3>
+      <img src="assets/img/mason-topaz.jpg" alt="Blue topaz crystal — the state gem of Texas" loading="lazy" />
+      <p>Mason County is the only place in Texas where blue topaz — the state gem — is found in the wild. Several local ranches open their land for fee-based topaz hunting: you walk the streambeds and granite outcrops with a pick and a screen, and whatever you find is yours to keep.</p>
+      <p>Best in cooler months (Oct–April). Wear closed-toe shoes, bring sun protection, and call ahead — most hunts are by appointment only.</p>
+      <a class="btn btn-primary modal-cta" href="https://masontx.org" target="_blank" rel="noopener">Find a ranch →</a>
+    </template>
+
+    <template id="modal-llano-river">
+      <p class="modal-eyebrow">15 minutes east</p>
+      <h3>Llano River</h3>
+      <img src="assets/img/mason-llano-river.jpg" alt="Limestone bluffs along the Llano River in Texas" loading="lazy" />
+      <p>One of the cleanest rivers in Texas — cold, clear, slow-moving, and lined with limestone bluffs. Perfect for tubing, paddling, fly-fishing for Guadalupe bass, or just wading in up to your knees and staying there.</p>
+      <p>Public access at the highway crossings on US-87 and FM-1900. Pack a sandwich and stay all afternoon.</p>
+      <a class="btn btn-primary modal-cta" href="https://www.tourtexas.com/destinations/mason-county-things-to-do" target="_blank" rel="noopener">More Mason County info →</a>
+    </template>
   </div>
 </section>
 
@@ -559,6 +613,11 @@
     </div>
   </div>
 </footer>
+
+<dialog id="masonModal" class="mason-modal" aria-labelledby="masonModalTitle">
+  <button type="button" class="modal-close" aria-label="Close">&times;</button>
+  <div class="modal-body"></div>
+</dialog>
 
 <script src="main.js"></script>
 </body>

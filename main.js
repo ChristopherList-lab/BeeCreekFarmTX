@@ -81,6 +81,33 @@
     });
   }
 
+  // ---------- Mason attractions modal ----------
+  const masonModal = document.getElementById("masonModal");
+  const masonModalBody = masonModal?.querySelector(".modal-body");
+  if (masonModal && masonModalBody) {
+    let lastTrigger = null;
+    document.querySelectorAll(".mason-card[data-modal-target]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.getAttribute("data-modal-target");
+        const tpl = document.getElementById(`modal-${id}`);
+        if (!tpl) return;
+        masonModalBody.replaceChildren(tpl.content.cloneNode(true));
+        lastTrigger = btn;
+        masonModal.showModal();
+      });
+    });
+    masonModal.querySelector(".modal-close")?.addEventListener("click", () => masonModal.close());
+    masonModal.addEventListener("click", (e) => {
+      const r = masonModal.getBoundingClientRect();
+      const inDialog = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+      if (!inDialog) masonModal.close();
+    });
+    masonModal.addEventListener("close", () => {
+      masonModalBody.replaceChildren();
+      lastTrigger?.focus();
+    });
+  }
+
   // ---------- Airbnb book buttons (placeholder until URLs are provided) ----------
   const AIRBNB_URLS = {
     "big-bend": "https://www.airbnb.com/rooms/1410490592766462063",
