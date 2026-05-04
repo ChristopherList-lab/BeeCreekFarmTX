@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" role="img" aria-label="Bee Creek Farm — Mason, TX">
+  <defs>
+    <g id="petal-h">
+      <path d="M0,-92 C18,-78 22,-46 0,-22 C-22,-46 -18,-78 0,-92 Z" fill="#E5A93A"/>
+      <path d="M0,-90 C14,-76 18,-50 0,-30 C-18,-50 -14,-76 0,-90 Z" fill="#F0BE55" opacity="0.55"/>
+    </g>
+  </defs>
+
+  <g transform="translate(120 120)">
+    <use href="#petal-h"/>
+    <use href="#petal-h" transform="rotate(45)"/>
+    <use href="#petal-h" transform="rotate(90)"/>
+    <use href="#petal-h" transform="rotate(135)"/>
+    <use href="#petal-h" transform="rotate(180)"/>
+    <use href="#petal-h" transform="rotate(225)"/>
+    <use href="#petal-h" transform="rotate(270)"/>
+    <use href="#petal-h" transform="rotate(315)"/>
+    <ellipse cx="-18" cy="-10" rx="16" ry="10" fill="#F4EFE3" opacity="0.92" transform="rotate(-22 -18 -10)"/>
+    <ellipse cx="18"  cy="-10" rx="16" ry="10" fill="#F4EFE3" opacity="0.92" transform="rotate(22 18 -10)"/>
+    <ellipse cx="-18" cy="-10" rx="16" ry="10" fill="none" stroke="#1F1B16" stroke-width="2" transform="rotate(-22 -18 -10)"/>
+    <ellipse cx="18"  cy="-10" rx="16" ry="10" fill="none" stroke="#1F1B16" stroke-width="2" transform="rotate(22 18 -10)"/>
+    <ellipse cx="0" cy="6" rx="22" ry="28" fill="#E5A93A"/>
+    <path d="M-19,-4 Q0,-12 19,-4" stroke="#1F1B16" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M-21,8 Q0,2 21,8" stroke="#1F1B16" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M-18,20 Q0,16 18,20" stroke="#1F1B16" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M0,32 L-4,40 L4,40 Z" fill="#1F1B16"/>
+    <circle cx="0" cy="-26" r="11" fill="#1F1B16"/>
+    <path d="M-4,-36 Q-9,-46 -12,-50" stroke="#1F1B16" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M4,-36 Q9,-46 12,-50" stroke="#1F1B16" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <circle cx="-12" cy="-50" r="2.2" fill="#1F1B16"/>
+    <circle cx="12"  cy="-50" r="2.2" fill="#1F1B16"/>
+  </g>
+
+  <g fill="#1F1B16" font-family="Georgia, 'Times New Roman', serif">
+    <text x="260" y="116" font-size="58" font-weight="700" letter-spacing="3">BEE CREEK FARM</text>
+    <line x1="262" y1="142" x2="700" y2="142" stroke="#1F1B16" stroke-width="2"/>
+    <text x="262" y="178" font-size="22" letter-spacing="10">MASON · TEXAS</text>
+  </g>
+</svg>

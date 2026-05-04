@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Bee Creek Farm">
+  <defs>
+    <g id="petal-mw">
+      <path d="M0,-92 C18,-78 22,-46 0,-22 C-22,-46 -18,-78 0,-92 Z" fill="#F4EFE3"/>
+    </g>
+  </defs>
+  <g transform="translate(120 120)">
+    <use href="#petal-mw"/>
+    <use href="#petal-mw" transform="rotate(45)"/>
+    <use href="#petal-mw" transform="rotate(90)"/>
+    <use href="#petal-mw" transform="rotate(135)"/>
+    <use href="#petal-mw" transform="rotate(180)"/>
+    <use href="#petal-mw" transform="rotate(225)"/>
+    <use href="#petal-mw" transform="rotate(270)"/>
+    <use href="#petal-mw" transform="rotate(315)"/>
+    <ellipse cx="0" cy="6" rx="22" ry="28" fill="none" stroke="#F4EFE3" stroke-width="3"/>
+    <path d="M-19,-4 Q0,-12 19,-4" stroke="#F4EFE3" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M-21,8 Q0,2 21,8" stroke="#F4EFE3" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M-18,20 Q0,16 18,20" stroke="#F4EFE3" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M0,32 L-4,40 L4,40 Z" fill="#F4EFE3"/>
+    <circle cx="0" cy="-26" r="11" fill="#F4EFE3"/>
+    <path d="M-4,-36 Q-9,-46 -12,-50" stroke="#F4EFE3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M4,-36 Q9,-46 12,-50" stroke="#F4EFE3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <circle cx="-12" cy="-50" r="2.2" fill="#F4EFE3"/>
+    <circle cx="12"  cy="-50" r="2.2" fill="#F4EFE3"/>
+  </g>
+</svg>
