@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://beecreekfarmtx.com/</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,6 +17,16 @@
     <image:image>
       <image:loc>https://beecreekfarmtx.com/assets/img/nocona-1.jpg</image:loc>
       <image:caption>Nocona container cabin at Bee Creek Farm</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://beecreekfarmtx.com/restoration.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://beecreekfarmtx.com/assets/img/hero-donkeys.jpg</image:loc>
+      <image:caption>Restoration at Bee Creek Farm — faith, family, and healing in the Texas Hill Country</image:caption>
     </image:image>
   </url>
 </urlset>
