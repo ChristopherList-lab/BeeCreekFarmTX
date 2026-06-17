@@ -110,8 +110,8 @@
 
   // ---------- Airbnb book buttons (placeholder until URLs are provided) ----------
   const AIRBNB_URLS = {
-    "big-bend": "https://www.airbnb.com/rooms/1410490592766462063",
-    "nocona": "https://www.airbnb.com/rooms/1415461566993026047",
+    "big-bend": "https://www.airbnb.com/rooms/1695847795323600081",
+    "nocona": "https://www.airbnb.com/rooms/1692751897156587420",
   };
   document.querySelectorAll("[data-airbnb]").forEach((a) => {
     const key = a.getAttribute("data-airbnb");
