@@ -751,6 +751,27 @@ section {
 .nav a[aria-current="page"]::after { width: 100%; }
 .site-header.scrolled .nav a[aria-current="page"] { color: var(--honey); }
 
+/* ---------- Tour video ---------- */
+.tour { background: var(--bone); }
+.tour .section-head { margin-inline: auto; text-align: center; }
+.tour .section-head p { margin-inline: auto; }
+.video-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--ink);
+  max-width: 1080px;
+  margin-inline: auto;
+}
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* ---------- Restoration page extras ---------- */
 
 /* Hero mantra (Rescue · Restore · Love) */
