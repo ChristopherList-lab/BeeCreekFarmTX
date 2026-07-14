@@ -780,6 +780,40 @@ section {
   display: block;
   border: 0;
 }
+.video-unmute {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(31, 27, 22, 0.62);
+  color: var(--bone);
+  border: 1px solid rgba(244, 239, 227, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background .2s var(--ease), transform .2s var(--ease), border-color .2s var(--ease);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.video-unmute:hover {
+  background: rgba(31, 27, 22, 0.82);
+  border-color: var(--honey);
+  transform: scale(1.06);
+}
+.video-unmute svg {
+  width: 22px;
+  height: 22px;
+}
+.video-unmute.is-unmuted {
+  background: var(--honey);
+  color: var(--ink);
+  border-color: var(--honey);
+}
 
 /* ---------- Restoration page extras ---------- */
 
