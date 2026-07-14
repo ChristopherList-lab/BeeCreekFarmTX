@@ -756,20 +756,29 @@ section {
 .tour .section-head { margin-inline: auto; text-align: center; }
 .tour .section-head p { margin-inline: auto; }
 .video-wrapper {
+  box-sizing: content-box;
   position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: var(--shadow-md);
   background: var(--ink);
-  max-width: 1080px;
+  max-width: 1040px;
   margin-inline: auto;
+
+  /* Country/barn wood frame: dark walnut + honey trim + warm drop shadow */
+  border: 16px solid #3D2E1F;
+  border-radius: 3px;
+  box-shadow:
+    0 0 0 3px #E5A93A,
+    0 30px 60px rgba(31,27,22,0.32),
+    0 8px 16px rgba(31,27,22,0.14);
 }
-.video-wrapper video {
+.video-wrapper video,
+.video-wrapper iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border: 0;
 }
 
 /* ---------- Restoration page extras ---------- */
