@@ -128,4 +128,24 @@
       });
     }
   });
+  // ---------- Vimeo unmute toggle ----------
+  const droneIframe = document.getElementById("droneVideo");
+  const unmuteBtn = document.getElementById("videoUnmute");
+  if (droneIframe && unmuteBtn && window.Vimeo) {
+    const player = new Vimeo.Player(droneIframe);
+    const iconMuted = unmuteBtn.querySelector(".icon-muted");
+    const iconSound = unmuteBtn.querySelector(".icon-sound");
+    let unmuted = false;
+    unmuteBtn.addEventListener("click", async () => {
+      unmuted = !unmuted;
+      try {
+        await player.setMuted(!unmuted);
+        if (unmuted) await player.setVolume(1);
+      } catch (e) { /* Vimeo API can throw before ready; ignore */ }
+      unmuteBtn.classList.toggle("is-unmuted", unmuted);
+      unmuteBtn.setAttribute("aria-label", unmuted ? "Mute video" : "Unmute video");
+      iconMuted.style.display = unmuted ? "none" : "";
+      iconSound.style.display = unmuted ? "" : "none";
+    });
+  }
 })();
